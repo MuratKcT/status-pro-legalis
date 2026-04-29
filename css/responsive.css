@@ -1,0 +1,126 @@
+/* ================================================
+   STATUS PRO LEGALIS — Responsive
+   ================================================ */
+
+/* ===== TABLET (max 1024px) ===== */
+@media (max-width: 1024px) {
+  .services__grid { grid-template-columns: 1fr 1fr; }
+  .services__grid .service-card:last-child { grid-column: 1 / -1; max-width: 420px; margin: 0 auto; }
+
+  .about__inner { grid-template-columns: 1fr; gap: 48px; }
+  .about__visual { order: -1; }
+  .about__ring-wrap { width: 260px; height: 260px; }
+  .about__content .section__title { text-align: center; }
+  .about__content .section__label { display: block; text-align: center; }
+  .about__content > p { text-align: center; }
+
+  .contact__inner { grid-template-columns: 1fr; gap: 48px; }
+  .contact__info .section__title { text-align: center; }
+  .contact__info .section__label { display: block; text-align: center; }
+  .contact__info > p { text-align: center; }
+
+  .footer__inner { grid-template-columns: 1fr 1fr; }
+  .footer__brand { grid-column: 1 / -1; }
+
+  .how__steps { flex-direction: column; gap: 16px; }
+  .how__connector { width: 2px; height: 40px; background: linear-gradient(180deg, rgba(255,215,0,0.3), rgba(255,215,0,0.1)); }
+  .how__connector::after { right: auto; bottom: -6px; left: 50%; top: auto; transform: translateX(-50%); }
+}
+
+/* ===== MOBILE (max 768px) ===== */
+@media (max-width: 768px) {
+  /* Header */
+  .nav {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(10,10,46,0.97);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 80px 32px 32px;
+    transition: right 0.4s cubic-bezier(0.16,1,0.3,1);
+    border-left: 1px solid rgba(255,215,0,0.15);
+    z-index: 999;
+  }
+
+  .nav.open { right: 0; }
+  .nav__link { font-size: 1.1rem; padding: 14px 20px; width: 100%; text-align: center; border-radius: 12px; }
+  .nav__link:hover { background: rgba(255,215,0,0.08); }
+
+  .hamburger { display: flex; }
+  .lang-switcher { margin-left: auto; margin-right: 12px; }
+  .header__inner { gap: 8px; }
+
+  /* Hero */
+  .hero { padding: 100px 0 60px; }
+  .hero__title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
+  .hero__subtitle { font-size: 0.95rem; }
+  .hero__3d-ring { width: 400px; height: 400px; }
+  .ring--outer { width: 380px; height: 380px; }
+  .ring--middle { width: 260px; height: 260px; }
+  .ring--inner { width: 160px; height: 160px; }
+
+  .hero__stats { padding: 20px 24px; gap: 0; }
+  .stat { padding: 0 16px; }
+  .stat__num { font-size: 1.8rem; }
+  .stat__plus { font-size: 1.3rem; }
+
+  /* Services */
+  .services__grid { grid-template-columns: 1fr; gap: 20px; }
+  .services__grid .service-card:last-child { grid-column: auto; max-width: none; }
+
+  /* About features */
+  .about__features { grid-template-columns: 1fr; }
+  .about__ring-wrap { width: 220px; height: 220px; }
+  .about__center-badge { width: 110px; height: 110px; }
+  .about__years { font-size: 2.8rem; }
+
+  /* Form */
+  .contact__form { grid-template-columns: 1fr; }
+  .contact__form-wrap { padding: 24px; }
+
+  /* Footer */
+  .footer__inner { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Section spacing */
+  .section { padding: 72px 0; }
+  .section__header { margin-bottom: 44px; }
+
+  /* Float WA */
+  .float-wa { bottom: 20px; right: 20px; width: 52px; height: 52px; font-size: 1.4rem; }
+}
+
+/* ===== SMALL MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+  .hero__actions { flex-direction: column; align-items: center; }
+  .btn { width: 100%; justify-content: center; }
+  .hero__stats { flex-direction: column; gap: 16px; }
+  .stat__divider { width: 80px; height: 1px; }
+  .hero__title { font-size: clamp(2rem, 9vw, 2.8rem); }
+  .logo__sub { display: none; }
+  .container { padding: 0 16px; }
+}
+
+/* ===== OVERLAY for mobile nav ===== */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 998;
+  backdrop-filter: blur(2px);
+}
+
+.nav-overlay.visible { display: block; }
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

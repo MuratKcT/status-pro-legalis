@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Status pro legalis — легализация в Польше, открытие фирм, карта побыту. Варшава." />
+  <title>Status pro legalis — Легализация в Польше</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ===== CANVAS PARTICLES ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <div class="logo__icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="28" stroke="#FFD700" stroke-width="2.5"/>
+            <!-- EU Stars -->
+            <g fill="#FFD700" class="eu-stars">
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(0,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(30,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(60,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(90,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(120,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(150,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(180,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(210,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(240,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(270,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(300,30,30) translate(0,-18)"/>
+              <polygon points="30,6 31.2,9.6 35,9.6 32,11.7 33.1,15.3 30,13.2 26.9,15.3 28,11.7 25,9.6 28.8,9.6" transform="rotate(330,30,30) translate(0,-18)"/>
+            </g>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__main">Status</span>
+          <span class="logo__sub">pro legalis</span>
+        </div>
+      </a>
+
+      <!-- Nav -->
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link" data-i18n="nav.services">Услуги</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">О нас</a>
+        <a href="#how" class="nav__link" data-i18n="nav.how">Как работаем</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Контакты</a>
+      </nav>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="pl">PL</button>
+        <button class="lang-btn" data-lang="tr">TR</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__3d-ring" id="hero3dRing">
+      <div class="ring ring--outer"></div>
+      <div class="ring ring--middle"></div>
+      <div class="ring ring--inner"></div>
+    </div>
+
+    <div class="container hero__content">
+      <div class="hero__badge reveal">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span data-i18n="hero.badge">5 лет опыта в Польше</span>
+      </div>
+      <h1 class="hero__title reveal">
+        <span data-i18n="hero.title1">Легализация</span>
+        <span class="hero__title--gold" data-i18n="hero.title2"> в Польше</span>
+      </h1>
+      <p class="hero__subtitle reveal" data-i18n="hero.subtitle">
+        Карта побыту, открытие фирм, бизнес-регистрация и налоговые услуги в Варшаве. Быстро, профессионально и на вашем языке.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="https://wa.me/48888995316" target="_blank" class="btn btn--primary btn--whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="hero.cta1">WhatsApp</span>
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          <i class="fa-solid fa-envelope"></i>
+          <span data-i18n="hero.cta2">Написать нам</span>
+        </a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-target="5">0</span>
+          <span class="stat__plus">+</span>
+          <span class="stat__label" data-i18n="stat.years">лет опыта</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="500">0</span>
+          <span class="stat__plus">+</span>
+          <span class="stat__label" data-i18n="stat.clients">клиентов</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="3">0</span>
+          <span class="stat__label" data-i18n="stat.langs">языка</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-i18n="services.label">Наши услуги</span>
+        <h2 class="section__title" data-i18n="services.title">Что мы делаем для вас</h2>
+        <p class="section__desc" data-i18n="services.desc">Полный спектр услуг для легализации и ведения бизнеса в Польше</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Card 1: Business -->
+        <div class="service-card reveal" data-tilt>
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="s1.title">Бизнес в Польше</h3>
+          <p class="service-card__desc" data-i18n="s1.desc">Открытие и сопровождение бизнеса</p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s1.l1">Открытие Sp. z o.o. (ООО)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s1.l2">Открытие JDG (ИП)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s1.l3">Открытие банковского счёта</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s1.l4">Изменения в уже существующих фирмах</span></li>
+          </ul>
+          <a href="#contact" class="service-card__btn" data-i18n="card.btn">Узнать подробнее</a>
+        </div>
+
+        <!-- Card 2: Residence -->
+        <div class="service-card service-card--featured reveal" data-tilt>
+          <div class="service-card__glow"></div>
+          <div class="service-card__badge" data-i18n="card.popular">Популярно</div>
+          <div class="service-card__icon">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="s2.title">ВНЖ и документы</h3>
+          <p class="service-card__desc" data-i18n="s2.desc">Легализация пребывания в Польше</p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s2.l1">Карта побыту (ВНЖ)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s2.l2">Карта резидента ЕС</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s2.l3">Profil Zaufany / Паспорт</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s2.l4">PESEL номер</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s2.l5">Водительское удостоверение</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s2.l6">Налоговые документы / Umowa najmu</span></li>
+          </ul>
+          <a href="#contact" class="service-card__btn" data-i18n="card.btn">Узнать подробнее</a>
+        </div>
+
+        <!-- Card 3: Tax -->
+        <div class="service-card reveal" data-tilt>
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="s3.title">Налоговые услуги</h3>
+          <p class="service-card__desc" data-i18n="s3.desc">Декларации и налоговое сопровождение</p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s3.l1">Расчёт PIT-11</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s3.l2">Годовая декларация</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s3.l3">Консультация по налогам</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="s3.l4">Налоговые вычеты</span></li>
+          </ul>
+          <a href="#contact" class="service-card__btn" data-i18n="card.btn">Узнать подробнее</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / WHY US ===== -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__visual reveal">
+        <div class="about__ring-wrap">
+          <div class="about__eu-circle">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="90" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="6 4"/>
+              <circle cx="100" cy="100" r="70" stroke="rgba(255,215,0,0.15)" stroke-width="1" stroke-dasharray="3 6"/>
+              <!-- 12 Stars -->
+              <g fill="#FFD700">
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(0,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(30,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(60,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(90,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(120,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(150,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(180,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(210,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(240,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(270,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(300,100,100)"/>
+                <polygon points="100,14 102,20 108,20 103,24 105,30 100,26 95,30 97,24 92,20 98,20" transform="rotate(330,100,100)"/>
+              </g>
+            </svg>
+          </div>
+          <div class="about__center-badge">
+            <span class="about__years" data-target="5">0</span>
+            <span class="about__years-label" data-i18n="about.years">лет</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content reveal">
+        <span class="section__label" data-i18n="about.label">О нас</span>
+        <h2 class="section__title" data-i18n="about.title">Ваш надёжный партнёр в Польше</h2>
+        <p class="about__text" data-i18n="about.text1">
+          Мы специализируемся на легализации пребывания и ведении бизнеса в Польше. Наша команда помогает русскоязычным, украиноязычным и турецкоязычным клиентам пройти все необходимые процедуры быстро и без стресса.
+        </p>
+        <p class="about__text" data-i18n="about.text2">
+          За 5 лет работы мы помогли более 500 клиентам оформить документы, открыть бизнес и обустроиться в Варшаве.
+        </p>
+        <div class="about__features">
+          <div class="about__feature">
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-i18n="about.f1">Варшава, Centrum</span>
+          </div>
+          <div class="about__feature">
+            <i class="fa-solid fa-comments"></i>
+            <span data-i18n="about.f2">RU · UA · TR · PL</span>
+          </div>
+          <div class="about__feature">
+            <i class="fa-solid fa-bolt"></i>
+            <span data-i18n="about.f3">Быстро и профессионально</span>
+          </div>
+          <div class="about__feature">
+            <i class="fa-solid fa-lock"></i>
+            <span data-i18n="about.f4">Конфиденциально</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how section" id="how">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-i18n="how.label">Процесс</span>
+        <h2 class="section__title" data-i18n="how.title">Как мы работаем</h2>
+      </div>
+      <div class="how__steps">
+        <div class="how__step reveal" data-tilt>
+          <div class="how__step-num">01</div>
+          <div class="how__step-icon"><i class="fa-solid fa-comment-dots"></i></div>
+          <h3 data-i18n="how.s1.title">Напишите нам</h3>
+          <p data-i18n="how.s1.desc">Свяжитесь через WhatsApp, Messenger или форму — мы ответим в течение нескольких минут.</p>
+        </div>
+        <div class="how__connector reveal"></div>
+        <div class="how__step reveal" data-tilt>
+          <div class="how__step-num">02</div>
+          <div class="how__step-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3 data-i18n="how.s2.title">Бесплатная консультация</h3>
+          <p data-i18n="how.s2.desc">Анализируем вашу ситуацию, подбираем оптимальное решение и объясняем каждый шаг.</p>
+        </div>
+        <div class="how__connector reveal"></div>
+        <div class="how__step reveal" data-tilt>
+          <div class="how__step-num">03</div>
+          <div class="how__step-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3 data-i18n="how.s3.title">Дело сделано</h3>
+          <p data-i18n="how.s3.desc">Мы берём все хлопоты на себя. Вы получаете готовый результат в кратчайшие сроки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+
+      <!-- Info -->
+      <div class="contact__info reveal">
+        <span class="section__label" data-i18n="contact.label">Контакты</span>
+        <h2 class="section__title" data-i18n="contact.title">Свяжитесь с нами</h2>
+        <p data-i18n="contact.desc">Мы отвечаем быстро. Выберите удобный способ связи:</p>
+
+        <div class="contact__channels">
+          <a href="https://wa.me/48888995316" target="_blank" class="contact__channel contact__channel--wa">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+48 888 995 316</span>
+            </div>
+          </a>
+          <a href="https://m.me/61587782196060" target="_blank" class="contact__channel contact__channel--fb">
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <div>
+              <strong>Messenger</strong>
+              <span>Status pro legalis</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/status_pro_legalis" target="_blank" class="contact__channel contact__channel--ig">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <strong>Instagram</strong>
+              <span>@status_pro_legalis</span>
+            </div>
+          </a>
+          <div class="contact__channel contact__channel--loc">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong data-i18n="contact.location">Адрес</strong>
+              <span>Warszawa, Centrum 🇵🇱</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact__form-wrap reveal">
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label data-i18n="form.name">Имя</label>
+            <input type="text" name="name" placeholder="Ваше имя" data-i18n-ph="form.name.ph" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="form.phone">Телефон / WhatsApp</label>
+            <input type="tel" name="phone" placeholder="+48 000 000 000" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="form.service">Услуга</label>
+            <select name="service">
+              <option value="" data-i18n="form.service.select">Выберите услугу</option>
+              <option value="business" data-i18n="form.service.business">Бизнес в Польше</option>
+              <option value="vnj" data-i18n="form.service.vnj">ВНЖ и документы</option>
+              <option value="tax" data-i18n="form.service.tax">Налоговые услуги</option>
+              <option value="other" data-i18n="form.service.other">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-i18n="form.lang">Язык общения</label>
+            <select name="language">
+              <option value="ru">Русский</option>
+              <option value="tr">Türkçe</option>
+              <option value="pl">Polski</option>
+              <option value="ua">Українська</option>
+            </select>
+          </div>
+          <div class="form-group form-group--full">
+            <label data-i18n="form.message">Сообщение</label>
+            <textarea name="message" rows="4" placeholder="Опишите вашу ситуацию..." data-i18n-ph="form.message.ph"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-i18n="form.submit">Отправить заявку</span>
+          </button>
+          <div class="form__success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-i18n="form.success">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__main">Status</span>
+        <span class="logo__sub"> pro legalis</span>
+        <p data-i18n="footer.tagline">Легализация в Польше — просто и надёжно</p>
+      </div>
+      <div class="footer__links">
+        <a href="#services" data-i18n="nav.services">Услуги</a>
+        <a href="#about" data-i18n="nav.about">О нас</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+      </div>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/profile.php?id=61587782196060" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/status_pro_legalis" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/48888995316" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Status pro legalis. Warszawa, Poland.</p>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/48888995316" target="_blank" class="float-wa" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-wa__tooltip" data-i18n="float.wa">Написать в WhatsApp</span>
+  </a>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/i18n.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
