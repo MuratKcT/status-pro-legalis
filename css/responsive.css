@@ -51,8 +51,9 @@
   .nav__link:hover { background: rgba(255,215,0,0.08); }
 
   .hamburger { display: flex; }
-  .lang-switcher { margin-left: auto; margin-right: 12px; }
-  .header__inner { gap: 8px; }
+  .lang-switcher { margin-left: auto; margin-right: 8px; padding: 3px; gap: 1px; }
+  .lang-switcher .lang-btn { padding: 4px 5px; font-size: 0.62rem; }
+  .header__inner { gap: 4px; }
 
   /* Hero */
   .hero { padding: 100px 0 60px; }
