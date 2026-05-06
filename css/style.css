@@ -435,6 +435,19 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
+.stat--free {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat__icon {
+  font-size: 1.8rem;
+  color: var(--gold);
+  text-shadow: 0 0 16px rgba(255,215,0,0.5);
+}
+
 /* ===== SCROLL HINT ===== */
 .hero__scroll-hint {
   position: absolute;
