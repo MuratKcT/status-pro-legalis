@@ -44,9 +44,13 @@
     transition: right 0.4s cubic-bezier(0.16,1,0.3,1);
     border-left: 1px solid rgba(255,215,0,0.15);
     z-index: 999;
+    pointer-events: none;
   }
 
-  .nav.open { right: 0; }
+  .nav.open {
+    right: 0;
+    pointer-events: auto;
+  }
   .nav__link { font-size: 1.1rem; padding: 14px 20px; width: 100%; text-align: center; border-radius: 12px; }
   .nav__link:hover { background: rgba(255,215,0,0.08); }
 
