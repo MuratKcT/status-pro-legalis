@@ -78,7 +78,15 @@ const translations = {
     "form.submit": "Отправить заявку",
     "form.success": "Заявка отправлена! Мы свяжемся с вами в ближайшее время.",
     "footer.tagline": "Легализация в Польше — просто и надёжно",
-    "float.wa": "Написать в WhatsApp"
+    "float.wa": "Написать в WhatsApp",
+    "cukr.badge": "Актуально 2025",
+    "cukr.official": "Официальный источник",
+    "cukr.title": "Карта побыту CUKR — для украинцев с UKR статусом",
+    "cukr.desc": "С 2025 года украинские граждане, имеющие статус UKR, могут подать заявку на специальный вид на жительство сроком на <strong>3 года</strong> через онлайн-систему.",
+    "cukr.c1": "Статус UKR с 4 марта 2024 года",
+    "cukr.c2": "Действующий UKR статус на момент подачи",
+    "cukr.c3": "Не менее 365 дней непрерывного UKR статуса",
+    "cukr.cta": "Помочь с заявкой на CUKR"
   },
   pl: {
     "nav.services": "Usługi",
@@ -155,7 +163,15 @@ const translations = {
     "form.submit": "Wyślij zapytanie",
     "form.success": "Zapytanie wysłane! Skontaktujemy się z Tobą wkrótce.",
     "footer.tagline": "Legalizacja w Polsce — prosto i rzetelnie",
-    "float.wa": "Napisz na WhatsApp"
+    "float.wa": "Napisz na WhatsApp",
+    "cukr.badge": "Aktualności 2025",
+    "cukr.official": "Oficjalne źródło",
+    "cukr.title": "Karta Pobytu CUKR — dla Ukraińców ze statusem UKR",
+    "cukr.desc": "Od 2025 roku obywatele Ukrainy posiadający status UKR mogą złożyć wniosek o specjalny pobyt czasowy na <strong>3 lata</strong> przez system online.",
+    "cukr.c1": "Status UKR od 4 marca 2024 roku",
+    "cukr.c2": "Aktywny status UKR w chwili składania wniosku",
+    "cukr.c3": "Co najmniej 365 dni ciągłego statusu UKR",
+    "cukr.cta": "Pomoc przy wniosku CUKR"
   },
   tr: {
     "nav.services": "Hizmetler",
@@ -232,7 +248,15 @@ const translations = {
     "form.submit": "Başvuru Gönder",
     "form.success": "Başvurunuz iletildi! En kısa sürede sizinle iletişime geçeceğiz.",
     "footer.tagline": "Polonya'da yasal statü — kolay ve güvenilir",
-    "float.wa": "WhatsApp'a Yaz"
+    "float.wa": "WhatsApp'a Yaz",
+    "cukr.badge": "Güncel 2025",
+    "cukr.official": "Resmi kaynak",
+    "cukr.title": "CUKR Oturma Kartı — UKR statüsündeki Ukraynalılar için",
+    "cukr.desc": "2025'ten itibaren UKR statüsüne sahip Ukrayna vatandaşları, online sistem üzerinden <strong>3 yıllık</strong> özel oturma iznine başvurabilir.",
+    "cukr.c1": "4 Mart 2024'ten itibaren UKR statüsü",
+    "cukr.c2": "Başvuru anında aktif UKR statüsü",
+    "cukr.c3": "En az 365 gün kesintisiz UKR statüsü",
+    "cukr.cta": "CUKR başvurusunda yardım al"
   }
 };
 

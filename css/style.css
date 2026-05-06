@@ -635,6 +635,122 @@ img { max-width: 100%; display: block; }
 
 .service-card__btn:hover { gap: 10px; border-color: var(--gold); }
 
+/* ===== CUKR BANNER ===== */
+.cukr {
+  background: linear-gradient(180deg, #060618 0%, var(--blue-dark) 100%);
+  padding: 60px 0;
+}
+
+.cukr__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  background: linear-gradient(135deg, rgba(0,87,183,0.2) 0%, rgba(255,215,0,0.06) 100%);
+  border: 1px solid rgba(255,215,0,0.25);
+  border-left: 4px solid #FFD700;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.cukr__inner::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(0,87,183,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cukr__flag {
+  font-size: 3.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+  filter: drop-shadow(0 0 12px rgba(0,87,183,0.4));
+}
+
+.cukr__content { flex: 1; }
+
+.cukr__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.cukr__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  background: var(--gold);
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+
+.cukr__official {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px dashed rgba(255,255,255,0.2);
+  padding-bottom: 1px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.cukr__official:hover { color: var(--gold); border-color: rgba(255,215,0,0.4); }
+
+.cukr__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.cukr__desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.cukr__desc strong { color: var(--gold); font-weight: 700; }
+
+.cukr__conditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.cukr__condition {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+}
+
+.cukr__condition .fa-circle-check { color: #25D366; font-size: 0.9rem; flex-shrink: 0; }
+
+.cukr__cta { align-self: flex-start; }
+
 /* ===== ABOUT ===== */
 .about {
   background: var(--blue-dark);
