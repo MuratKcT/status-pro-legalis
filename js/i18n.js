@@ -356,7 +356,7 @@ function applyTranslations(lang) {
   // data-i18n elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.textContent = t[key];
+    if (t[key] !== undefined) el.innerHTML = t[key];
   });
 
   // data-i18n-ph (placeholders)
