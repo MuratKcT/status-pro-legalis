@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & RFQ — Status Pro Legalis</title>
+  <meta name="description" content="Contact Status Pro Legalis for business consulting, company formation or industrial product quotations."/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-breadcrumb"><a href="index.html">Home</a><span>›</span>Contact</div>
+    <div class="section-label">Get in Touch</div>
+    <h1>Contact Us</h1>
+    <p>Whether you need business consulting, company registration in Poland, or B2B product quotations — we're here to help.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: Contact Info -->
+      <div class="contact-info">
+        <h2>Let's talk business</h2>
+        <p>Reach out through any channel you prefer. We typically respond within 24 hours.</p>
+
+        <div class="contact-cards">
+          <a href="mailto:b2b@statusprolegalis.com" class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <div>
+              <div class="contact-card-label">E-mail</div>
+              <div class="contact-card-value">b2b@statusprolegalis.com</div>
+            </div>
+          </a>
+          <a href="https://wa.me/48888595316" target="_blank" class="contact-card">
+            <div class="contact-card-icon">💬</div>
+            <div>
+              <div class="contact-card-label">WhatsApp</div>
+              <div class="contact-card-value">+48 888 595 316</div>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <div class="contact-card-label">Location</div>
+              <div class="contact-card-value">Warsaw, Poland</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">🕐</div>
+            <div>
+              <div class="contact-card-label">Working Hours</div>
+              <div class="contact-card-value">Mon–Fri, 9:00–18:00 CET</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-langs">
+          <div class="contact-langs-label">We speak:</div>
+          <div class="contact-lang-tags">
+            <span>🇬🇧 English</span>
+            <span>🇵🇱 Polish</span>
+            <span>🇺🇦 Ukrainian</span>
+            <span>🇹🇷 Turkish</span>
+            <span>🇷🇺 Russian</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Simple Contact Form -->
+      <div class="form-box">
+        <h3>Send us a message</h3>
+        <p>For general inquiries, consulting questions or to start a conversation.</p>
+        <form id="contactForm" class="form-fields">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First &amp; Last Name *</label>
+              <input type="text" name="name" required placeholder="John Smith"/>
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" name="company" placeholder="Your Company Ltd."/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>E-mail *</label>
+              <input type="email" name="email" required placeholder="john@company.com"/>
+            </div>
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" name="phone" placeholder="+48 ..."/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject *</label>
+            <select name="subject" required>
+              <option value="">— Select topic —</option>
+              <option>Company formation in Poland</option>
+              <option>Market entry consulting</option>
+              <option>International trade / B2B partnership</option>
+              <option>Industrial products inquiry</option>
+              <option>Innovation &amp; partnerships</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea name="message" rows="5" required placeholder="Tell us about your project or question..."></textarea>
+          </div>
+          <div class="form-gdpr">
+            <input type="checkbox" id="gdpr" required/>
+            <label for="gdpr">I agree to the processing of my personal data for the purpose of handling this inquiry (GDPR/RODO).</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          <div id="contact-status" class="form-status"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RFQ SECTION -->
+<section class="section section--alt" id="rfq">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Industrial Products</div>
+      <h2>Request a Quote (RFQ)</h2>
+      <p>Use this form to request pricing and availability for our industrial products.<br>We'll respond with a detailed offer within 2 business days.</p>
+    </div>
+    <div class="rfq-box reveal">
+      <form id="rfqForm" class="form-fields">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Company Name *</label>
+            <input type="text" name="company" required placeholder="Your Company Ltd."/>
+          </div>
+          <div class="form-group">
+            <label>Contact Person *</label>
+            <input type="text" name="name" required placeholder="First &amp; Last Name"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>E-mail *</label>
+            <input type="email" name="email" required placeholder="email@company.com"/>
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" name="phone" required placeholder="+48 ..."/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Country *</label>
+            <input type="text" name="country" required placeholder="e.g. Poland"/>
+          </div>
+          <div class="form-group">
+            <label>Delivery Country</label>
+            <input type="text" name="delivery_country" placeholder="e.g. Germany"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Product Group *</label>
+          <select name="product_group" required>
+            <option value="">— Select product group —</option>
+            <option>HAWKLINE — SPC/LVT Flooring</option>
+            <option>HAWKLINE — Decorative Wall Panels</option>
+            <option>HAWKLINE — Skirting Boards</option>
+            <option>IŞIN DAYLIGHT — Street Lighting Poles</option>
+            <option>IŞIN DAYLIGHT — Decorative Lighting Poles</option>
+            <option>IŞIN DAYLIGHT — Solar Lighting Poles</option>
+            <option>IŞIN DAYLIGHT — High Mast Poles</option>
+            <option>IŞIN DAYLIGHT — Traffic &amp; Camera Poles</option>
+            <option>ERSAN GROUP — Power Transmission Towers</option>
+            <option>ERSAN GROUP — Telecom Towers</option>
+            <option>ERSAN GROUP — Substation Steel Structures</option>
+            <option>ERSAN GROUP — Industrial Steel Structures</option>
+            <option>SAYAL VİNÇ — Electric Hoists</option>
+            <option>SAYAL VİNÇ — Monorail Systems</option>
+            <option>SAYAL VİNÇ — End Carriages</option>
+            <option>SAYAL VİNÇ — Other Crane Components</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Quantity / Volume</label>
+            <input type="text" name="quantity" placeholder="e.g. 500 m², 20 pcs, 1 container"/>
+          </div>
+          <div class="form-group">
+            <label>Required Delivery Date</label>
+            <input type="text" name="delivery_date" placeholder="e.g. Q2 2026"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Technical Specifications &amp; Project Description *</label>
+          <textarea name="specs" rows="6" required placeholder="Please describe your technical requirements, project context, any specific dimensions, standards or certifications needed..."></textarea>
+        </div>
+        <div class="form-note">
+          📎 <strong>Technical drawings or documents?</strong> Please send them to <a href="mailto:b2b@statusprolegalis.com">b2b@statusprolegalis.com</a> referencing your company name.
+        </div>
+        <div class="form-gdpr">
+          <input type="checkbox" id="rfq-gdpr" required/>
+          <label for="rfq-gdpr">I agree to the processing of my personal data for the purpose of this quotation request (GDPR/RODO).</label>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;">Submit RFQ</button>
+        <div id="rfq-status" class="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<style>
+.contact-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+.contact-info h2 { margin-bottom: 12px; }
+.contact-info > p { margin-bottom: 32px; }
+.contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 32px; }
+.contact-card {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--white); border: 1px solid var(--gray-light);
+  border-radius: var(--radius); padding: 16px; transition: var(--transition);
+  text-decoration: none; color: inherit;
+}
+a.contact-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.contact-card-icon { font-size: 1.4rem; }
+.contact-card-label { font-size: 0.72rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.06em; }
+.contact-card-value { font-weight: 600; font-size: 0.88rem; }
+.contact-langs-label { font-size: 0.78rem; color: var(--gray); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+.contact-lang-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.contact-lang-tags span {
+  font-size: 0.82rem; padding: 5px 12px; background: var(--off-white);
+  border: 1px solid var(--gray-light); border-radius: 100px;
+}
+.form-box {
+  background: var(--white); border: 1px solid var(--gray-light);
+  border-radius: var(--radius-lg); padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+.form-box h3 { margin-bottom: 6px; }
+.form-box > p { margin-bottom: 24px; font-size: 0.9rem; }
+.rfq-box {
+  background: var(--white); border: 1px solid var(--gray-light);
+  border-radius: var(--radius-lg); padding: 40px;
+  box-shadow: var(--shadow-sm); max-width: 860px; margin: 48px auto 0;
+}
+/* Form fields */
+.form-fields { display: flex; flex-direction: column; gap: 18px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.82rem; font-weight: 600; color: var(--text); }
+.form-group input, .form-group select, .form-group textarea {
+  border: 1.5px solid var(--gray-light); border-radius: var(--radius-sm);
+  padding: 10px 14px; font-size: 0.9rem; font-family: var(--font);
+  color: var(--text); background: var(--white); transition: var(--transition);
+  outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,37,128,0.08);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-gdpr { display: flex; gap: 10px; align-items: flex-start; }
+.form-gdpr input { margin-top: 3px; min-width: 16px; accent-color: var(--blue); }
+.form-gdpr label { font-size: 0.78rem; color: var(--text-mid); line-height: 1.5; }
+.form-note {
+  background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.25);
+  border-radius: var(--radius-sm); padding: 14px 16px; font-size: 0.85rem; color: var(--text-mid);
+}
+.form-note a { color: var(--blue); font-weight: 600; }
+.form-status { min-height: 24px; font-size: 0.88rem; text-align: center; margin-top: 4px; }
+.form-status.success { color: #16a34a; }
+.form-status.error   { color: #dc2626; }
+@media(max-width:900px){ .contact-layout{grid-template-columns:1fr;} }
+@media(max-width:600px){ .form-row{grid-template-columns:1fr;} .contact-cards{grid-template-columns:1fr;} }
+</style>
+
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script>
+const TG_TOKEN   = '8686271606:AAFt_7u7ebRDmfEik5xihES4ox4ccas_ccg';
+const TG_CHAT_ID = '-1003859260275';
+
+async function sendToTelegram(text) {
+  await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ chat_id: TG_CHAT_ID, text, parse_mode: 'HTML' })
+  });
+}
+
+document.getElementById('contactForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn    = e.target.querySelector('button[type=submit]');
+  const status = document.getElementById('contact-status');
+  const fd     = new FormData(e.target);
+  btn.disabled = true; btn.textContent = 'Sending...';
+  try {
+    await sendToTelegram(
+      `📩 <b>New Contact Message</b>\n` +
+      `👤 ${fd.get('name')} | ${fd.get('company') || '—'}\n` +
+      `📧 ${fd.get('email')}\n` +
+      `📞 ${fd.get('phone') || '—'}\n` +
+      `📌 ${fd.get('subject')}\n\n` +
+      `💬 ${fd.get('message')}`
+    );
+    status.className = 'form-status success';
+    status.textContent = '✓ Message sent! We will get back to you within 24 hours.';
+    e.target.reset();
+  } catch {
+    status.className = 'form-status error';
+    status.textContent = 'Error sending. Please try via WhatsApp or email.';
+  } finally {
+    btn.disabled = false; btn.textContent = 'Send Message';
+  }
+});
+
+document.getElementById('rfqForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn    = e.target.querySelector('button[type=submit]');
+  const status = document.getElementById('rfq-status');
+  const fd     = new FormData(e.target);
+  btn.disabled = true; btn.textContent = 'Submitting...';
+  try {
+    await sendToTelegram(
+      `📦 <b>New RFQ Request</b>\n` +
+      `🏢 ${fd.get('company')}\n` +
+      `👤 ${fd.get('name')}\n` +
+      `📧 ${fd.get('email')}\n` +
+      `📞 ${fd.get('phone')}\n` +
+      `🌍 ${fd.get('country')} → ${fd.get('delivery_country') || '—'}\n` +
+      `📦 <b>Product:</b> ${fd.get('product_group')}\n` +
+      `🔢 Qty: ${fd.get('quantity') || '—'} | Delivery: ${fd.get('delivery_date') || '—'}\n\n` +
+      `📋 <b>Specs:</b>\n${fd.get('specs')}`
+    );
+    status.className = 'form-status success';
+    status.textContent = '✓ RFQ submitted! You will receive our offer within 2 business days.';
+    e.target.reset();
+  } catch {
+    status.className = 'form-status error';
+    status.textContent = 'Error submitting. Please email b2b@statusprolegalis.com directly.';
+  } finally {
+    btn.disabled = false; btn.textContent = 'Submit RFQ';
+  }
+});
+</script>
+</body>
+</html>
