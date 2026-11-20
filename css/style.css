@@ -462,7 +462,9 @@ a  { text-decoration: none; color: inherit; }
   .nav-toggle { display: flex; }
   .nav-links.open {
     display: flex; flex-direction: column; gap: 0;
-    position: fixed; top: calc(var(--topbar-h) + var(--nav-h)); left: 0; right: 0;
+    /* .navbar has backdrop-filter, so it is the containing block: anchor just below it */
+    position: absolute; top: 100%; left: 0; right: 0;
+    max-height: calc(100vh - var(--topbar-h) - var(--nav-h)); overflow-y: auto;
     background: rgba(6,8,44,0.98); backdrop-filter: blur(16px);
     padding: 16px; border-bottom: 1px solid rgba(201,168,76,0.12);
     z-index: 999;
