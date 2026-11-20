@@ -18,10 +18,10 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="page-breadcrumb"><a href="index.html">Home</a><span>›</span>Contact</div>
-    <div class="section-label">Get in Touch</div>
-    <h1>Contact Us</h1>
-    <p>Whether you need business consulting, company registration in Poland, or B2B product quotations — we're here to help.</p>
+    <div class="page-breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a><span>›</span><span data-i18n="contact.crumb">Contact</span></div>
+    <div class="section-label" data-i18n="contact.label">Get in Touch</div>
+    <h1 data-i18n="contact.h1">Contact Us</h1>
+    <p data-i18n="contact.hero.p">Whether you need business consulting, company registration in Poland, or B2B product quotations — we're here to help.</p>
   </div>
 </section>
 
@@ -32,42 +32,42 @@
 
       <!-- LEFT: Contact Info -->
       <div class="contact-info">
-        <h2>Let's talk business</h2>
-        <p>Reach out through any channel you prefer. We typically respond within 24 hours.</p>
+        <h2 data-i18n="contact.info.h2">Let's talk business</h2>
+        <p data-i18n="contact.info.p">Reach out through any channel you prefer. We typically respond within 24 hours.</p>
 
         <div class="contact-cards">
           <a href="mailto:b2b@statusprolegalis.com" class="contact-card">
             <div class="contact-card-icon">📧</div>
             <div>
-              <div class="contact-card-label">E-mail</div>
+              <div class="contact-card-label" data-i18n="contact.card.email">E-mail</div>
               <div class="contact-card-value">b2b@statusprolegalis.com</div>
             </div>
           </a>
           <a href="https://wa.me/48888595316" target="_blank" class="contact-card">
             <div class="contact-card-icon">💬</div>
             <div>
-              <div class="contact-card-label">WhatsApp</div>
+              <div class="contact-card-label" data-i18n="contact.card.wa">WhatsApp</div>
               <div class="contact-card-value">+48 888 595 316</div>
             </div>
           </a>
           <div class="contact-card">
             <div class="contact-card-icon">📍</div>
             <div>
-              <div class="contact-card-label">Location</div>
-              <div class="contact-card-value">Warsaw, Poland</div>
+              <div class="contact-card-label" data-i18n="contact.card.loc">Location</div>
+              <div class="contact-card-value" data-i18n="contact.card.loc.val">Warsaw, Poland</div>
             </div>
           </div>
           <div class="contact-card">
             <div class="contact-card-icon">🕐</div>
             <div>
-              <div class="contact-card-label">Working Hours</div>
-              <div class="contact-card-value">Mon–Fri, 9:00–18:00 CET</div>
+              <div class="contact-card-label" data-i18n="contact.card.hours">Working Hours</div>
+              <div class="contact-card-value" data-i18n="contact.card.hours.val">Mon–Fri, 9:00–18:00 CET</div>
             </div>
           </div>
         </div>
 
         <div class="contact-langs">
-          <div class="contact-langs-label">We speak:</div>
+          <div class="contact-langs-label" data-i18n="contact.langs.label">We speak:</div>
           <div class="contact-lang-tags">
             <span>🇬🇧 English</span>
             <span>🇵🇱 Polish</span>
@@ -80,7 +80,7 @@
 
       <!-- RIGHT: Simple Contact Form -->
       <div class="form-box">
-        <h3>Send us a message</h3>
+        <h3 data-i18n="contact.form.h2">Send us a message</h3>
         <p>For general inquiries, consulting questions or to start a conversation.</p>
         <form id="contactForm" class="form-fields">
           <div class="form-row">
@@ -123,7 +123,7 @@
             <input type="checkbox" id="gdpr" required/>
             <label for="gdpr">I agree to the processing of my personal data for the purpose of handling this inquiry (GDPR/RODO).</label>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact.form.btn">Send Message</button>
           <div id="contact-status" class="form-status"></div>
         </form>
       </div>
@@ -136,9 +136,9 @@
 <section class="section section--alt" id="rfq">
   <div class="container">
     <div class="text-center reveal">
-      <div class="section-label">Industrial Products</div>
-      <h2>Request a Quote (RFQ)</h2>
-      <p>Use this form to request pricing and availability for our industrial products.<br>We'll respond with a detailed offer within 2 business days.</p>
+      <div class="section-label" data-i18n="rfq.label">Industrial Products</div>
+      <h2 data-i18n="rfq.h2">Request a Quote (RFQ)</h2>
+      <p data-i18n="rfq.p">Use this form to request pricing and availability for our industrial products.<br>We'll respond with a detailed offer within 2 business days.</p>
     </div>
     <div class="rfq-box reveal">
       <form id="rfqForm" class="form-fields">
@@ -215,7 +215,7 @@
           <input type="checkbox" id="rfq-gdpr" required/>
           <label for="rfq-gdpr">I agree to the processing of my personal data for the purpose of this quotation request (GDPR/RODO).</label>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;">Submit RFQ</button>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;" data-i18n="rfq.btn">Submit RFQ</button>
         <div id="rfq-status" class="form-status"></div>
       </form>
     </div>
@@ -288,6 +288,7 @@ a.contact-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY
 </style>
 
 <script src="js/i18n.js"></script>
+<script src="js/i18n-pages.js"></script>
 <script src="js/components.js"></script>
 <script>
 const TG_TOKEN   = '8686271606:AAFt_7u7ebRDmfEik5xihES4ox4ccas_ccg';
@@ -306,7 +307,7 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
   const btn    = e.target.querySelector('button[type=submit]');
   const status = document.getElementById('contact-status');
   const fd     = new FormData(e.target);
-  btn.disabled = true; btn.textContent = 'Sending...';
+  btn.disabled = true; btn.textContent = t('contact.form.sending');
   try {
     await sendToTelegram(
       `📩 <b>New Contact Message</b>\n` +
@@ -317,13 +318,13 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
       `💬 ${fd.get('message')}`
     );
     status.className = 'form-status success';
-    status.textContent = '✓ Message sent! We will get back to you within 24 hours.';
+    status.textContent = t('contact.form.success');
     e.target.reset();
   } catch {
     status.className = 'form-status error';
-    status.textContent = 'Error sending. Please try via WhatsApp or email.';
+    status.textContent = t('contact.form.error');
   } finally {
-    btn.disabled = false; btn.textContent = 'Send Message';
+    btn.disabled = false; btn.textContent = t('contact.form.btn');
   }
 });
 
@@ -332,7 +333,7 @@ document.getElementById('rfqForm').addEventListener('submit', async e => {
   const btn    = e.target.querySelector('button[type=submit]');
   const status = document.getElementById('rfq-status');
   const fd     = new FormData(e.target);
-  btn.disabled = true; btn.textContent = 'Submitting...';
+  btn.disabled = true; btn.textContent = t('rfq.sending');
   try {
     await sendToTelegram(
       `📦 <b>New RFQ Request</b>\n` +
@@ -346,13 +347,13 @@ document.getElementById('rfqForm').addEventListener('submit', async e => {
       `📋 <b>Specs:</b>\n${fd.get('specs')}`
     );
     status.className = 'form-status success';
-    status.textContent = '✓ RFQ submitted! You will receive our offer within 2 business days.';
+    status.textContent = t('rfq.success');
     e.target.reset();
   } catch {
     status.className = 'form-status error';
-    status.textContent = 'Error submitting. Please email b2b@statusprolegalis.com directly.';
+    status.textContent = t('rfq.error');
   } finally {
-    btn.disabled = false; btn.textContent = 'Submit RFQ';
+    btn.disabled = false; btn.textContent = t('rfq.btn');
   }
 });
 </script>
