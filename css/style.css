@@ -489,20 +489,17 @@ a  { text-decoration: none; color: inherit; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 768px) {
-  .topbar-left .topbar-item:not(:last-child),
-  .topbar-sep { display: none; }
-  .topbar-left { display: none; }
-  .topbar-inner { justify-content: center; }
+  /* Topbar removed on mobile — language choice lives in the hamburger menu */
+  :root { --topbar-h: 0px; }
+  .topbar { display: none; }
 }
 @media (max-width: 640px) {
-  :root { --nav-h: 64px; --topbar-h: 36px; }
+  :root { --nav-h: 100px; }
+  .nav-logo-img { height: 88px; }
   .section { padding: 72px 0; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .hero-actions { flex-direction: column; }
   .btn { justify-content: center; }
   .cta-actions { flex-direction: column; align-items: center; }
-  .lang-switcher { gap: 6px; }
-  .lang-switcher .lang-btn { padding: 4px 10px; font-size: 0.78rem; color: rgba(255,255,255,0.7); }
-  .lang-switcher .lang-btn.active { color: var(--gold); }
 }
