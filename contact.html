@@ -69,11 +69,11 @@
         <div class="contact-langs">
           <div class="contact-langs-label" data-i18n="contact.langs.label">We speak:</div>
           <div class="contact-lang-tags">
-            <span>🇬🇧 English</span>
-            <span>🇵🇱 Polish</span>
-            <span>🇺🇦 Ukrainian</span>
-            <span>🇹🇷 Turkish</span>
-            <span>🇷🇺 Russian</span>
+            <span data-i18n="ct.x.1">🇬🇧 English</span>
+            <span data-i18n="ct.x.2">🇵🇱 Polish</span>
+            <span data-i18n="ct.x.3">🇺🇦 Ukrainian</span>
+            <span data-i18n="ct.x.4">🇹🇷 Turkish</span>
+            <span data-i18n="ct.x.5">🇷🇺 Russian</span>
           </div>
         </div>
       </div>
@@ -81,47 +81,47 @@
       <!-- RIGHT: Simple Contact Form -->
       <div class="form-box">
         <h3 data-i18n="contact.form.h2">Send us a message</h3>
-        <p>For general inquiries, consulting questions or to start a conversation.</p>
+        <p data-i18n="ct.x.6">For general inquiries, consulting questions or to start a conversation.</p>
         <form id="contactForm" class="form-fields">
           <div class="form-row">
             <div class="form-group">
-              <label>First &amp; Last Name *</label>
-              <input type="text" name="name" required placeholder="John Smith"/>
+              <label data-i18n="ct.x.7">First &amp; Last Name *</label>
+              <input type="text" name="name" required placeholder="John Smith" data-i18n-ph="ct.x.8"/>
             </div>
             <div class="form-group">
-              <label>Company</label>
-              <input type="text" name="company" placeholder="Your Company Ltd."/>
+              <label data-i18n="ct.x.9">Company</label>
+              <input type="text" name="company" placeholder="Your Company Ltd." data-i18n-ph="ct.x.10"/>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>E-mail *</label>
+              <label data-i18n="ct.x.11">E-mail *</label>
               <input type="email" name="email" required placeholder="john@company.com"/>
             </div>
             <div class="form-group">
-              <label>Phone / WhatsApp</label>
+              <label data-i18n="ct.x.12">Phone / WhatsApp</label>
               <input type="tel" name="phone" placeholder="+48 ..."/>
             </div>
           </div>
           <div class="form-group">
-            <label>Subject *</label>
+            <label data-i18n="ct.x.13">Subject *</label>
             <select name="subject" required>
-              <option value="">— Select topic —</option>
-              <option>Company formation in Poland</option>
-              <option>Market entry consulting</option>
-              <option>International trade / B2B partnership</option>
-              <option>Industrial products inquiry</option>
-              <option>Innovation &amp; partnerships</option>
-              <option>Other</option>
+              <option value="" data-i18n="ct.x.14">— Select topic —</option>
+              <option value="Company formation in Poland" data-i18n="ct.x.15">Company formation in Poland</option>
+              <option value="Market entry consulting" data-i18n="ct.x.16">Market entry consulting</option>
+              <option value="International trade / B2B partnership" data-i18n="ct.x.17">International trade / B2B partnership</option>
+              <option value="Industrial products inquiry" data-i18n="ct.x.18">Industrial products inquiry</option>
+              <option value="Innovation &amp; partnerships" data-i18n="ct.x.19">Innovation &amp; partnerships</option>
+              <option value="Other" data-i18n="ct.x.20">Other</option>
             </select>
           </div>
           <div class="form-group">
-            <label>Message *</label>
-            <textarea name="message" rows="5" required placeholder="Tell us about your project or question..."></textarea>
+            <label data-i18n="ct.x.21">Message *</label>
+            <textarea name="message" rows="5" required placeholder="Tell us about your project or question..." data-i18n-ph="ct.x.22"></textarea>
           </div>
           <div class="form-gdpr">
             <input type="checkbox" id="gdpr" required/>
-            <label for="gdpr">I agree to the processing of my personal data for the purpose of handling this inquiry (GDPR/RODO).</label>
+            <label for="gdpr" data-i18n="ct.x.23">I agree to the processing of my personal data for the purpose of handling this inquiry (GDPR/RODO).</label>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact.form.btn">Send Message</button>
           <div id="contact-status" class="form-status"></div>
@@ -144,76 +144,76 @@
       <form id="rfqForm" class="form-fields">
         <div class="form-row">
           <div class="form-group">
-            <label>Company Name *</label>
-            <input type="text" name="company" required placeholder="Your Company Ltd."/>
+            <label data-i18n="ct.x.24">Company Name *</label>
+            <input type="text" name="company" required placeholder="Your Company Ltd." data-i18n-ph="ct.x.10"/>
           </div>
           <div class="form-group">
-            <label>Contact Person *</label>
-            <input type="text" name="name" required placeholder="First &amp; Last Name"/>
+            <label data-i18n="ct.x.25">Contact Person *</label>
+            <input type="text" name="name" required placeholder="First &amp; Last Name" data-i18n-ph="ct.x.26"/>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label>E-mail *</label>
+            <label data-i18n="ct.x.11">E-mail *</label>
             <input type="email" name="email" required placeholder="email@company.com"/>
           </div>
           <div class="form-group">
-            <label>Phone / WhatsApp *</label>
+            <label data-i18n="ct.x.27">Phone / WhatsApp *</label>
             <input type="tel" name="phone" required placeholder="+48 ..."/>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label>Country *</label>
-            <input type="text" name="country" required placeholder="e.g. Poland"/>
+            <label data-i18n="ct.x.28">Country *</label>
+            <input type="text" name="country" required placeholder="e.g. Poland" data-i18n-ph="ct.x.29"/>
           </div>
           <div class="form-group">
-            <label>Delivery Country</label>
-            <input type="text" name="delivery_country" placeholder="e.g. Germany"/>
+            <label data-i18n="ct.x.30">Delivery Country</label>
+            <input type="text" name="delivery_country" placeholder="e.g. Germany" data-i18n-ph="ct.x.31"/>
           </div>
         </div>
         <div class="form-group">
-          <label>Product Group *</label>
+          <label data-i18n="ct.x.32">Product Group *</label>
           <select name="product_group" required>
-            <option value="">— Select product group —</option>
-            <option>HAWKLINE — SPC/LVT Flooring</option>
-            <option>HAWKLINE — Decorative Wall Panels</option>
-            <option>HAWKLINE — Skirting Boards</option>
-            <option>IŞIN DAYLIGHT — Street Lighting Poles</option>
-            <option>IŞIN DAYLIGHT — Decorative Lighting Poles</option>
-            <option>IŞIN DAYLIGHT — Solar Lighting Poles</option>
-            <option>IŞIN DAYLIGHT — High Mast Poles</option>
-            <option>IŞIN DAYLIGHT — Traffic &amp; Camera Poles</option>
-            <option>ERSAN GROUP — Power Transmission Towers</option>
-            <option>ERSAN GROUP — Telecom Towers</option>
-            <option>ERSAN GROUP — Substation Steel Structures</option>
-            <option>ERSAN GROUP — Industrial Steel Structures</option>
-            <option>SAYAL VİNÇ — Electric Hoists</option>
-            <option>SAYAL VİNÇ — Monorail Systems</option>
-            <option>SAYAL VİNÇ — End Carriages</option>
-            <option>SAYAL VİNÇ — Other Crane Components</option>
+            <option value="" data-i18n="ct.x.33">— Select product group —</option>
+            <option value="HAWKLINE — SPC/LVT Flooring" data-i18n="ct.x.34">HAWKLINE — SPC/LVT Flooring</option>
+            <option value="HAWKLINE — Decorative Wall Panels" data-i18n="ct.x.35">HAWKLINE — Decorative Wall Panels</option>
+            <option value="HAWKLINE — Skirting Boards" data-i18n="ct.x.36">HAWKLINE — Skirting Boards</option>
+            <option value="IŞIN DAYLIGHT — Street Lighting Poles" data-i18n="ct.x.37">IŞIN DAYLIGHT — Street Lighting Poles</option>
+            <option value="IŞIN DAYLIGHT — Decorative Lighting Poles" data-i18n="ct.x.38">IŞIN DAYLIGHT — Decorative Lighting Poles</option>
+            <option value="IŞIN DAYLIGHT — Solar Lighting Poles" data-i18n="ct.x.39">IŞIN DAYLIGHT — Solar Lighting Poles</option>
+            <option value="IŞIN DAYLIGHT — High Mast Poles" data-i18n="ct.x.40">IŞIN DAYLIGHT — High Mast Poles</option>
+            <option value="IŞIN DAYLIGHT — Traffic &amp; Camera Poles" data-i18n="ct.x.41">IŞIN DAYLIGHT — Traffic &amp; Camera Poles</option>
+            <option value="ERSAN GROUP — Power Transmission Towers" data-i18n="ct.x.42">ERSAN GROUP — Power Transmission Towers</option>
+            <option value="ERSAN GROUP — Telecom Towers" data-i18n="ct.x.43">ERSAN GROUP — Telecom Towers</option>
+            <option value="ERSAN GROUP — Substation Steel Structures" data-i18n="ct.x.44">ERSAN GROUP — Substation Steel Structures</option>
+            <option value="ERSAN GROUP — Industrial Steel Structures" data-i18n="ct.x.45">ERSAN GROUP — Industrial Steel Structures</option>
+            <option value="SAYAL VİNÇ — Electric Hoists" data-i18n="ct.x.46">SAYAL VİNÇ — Electric Hoists</option>
+            <option value="SAYAL VİNÇ — Monorail Systems" data-i18n="ct.x.47">SAYAL VİNÇ — Monorail Systems</option>
+            <option value="SAYAL VİNÇ — End Carriages" data-i18n="ct.x.48">SAYAL VİNÇ — End Carriages</option>
+            <option value="SAYAL VİNÇ — Other Crane Components" data-i18n="ct.x.49">SAYAL VİNÇ — Other Crane Components</option>
           </select>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label>Quantity / Volume</label>
-            <input type="text" name="quantity" placeholder="e.g. 500 m², 20 pcs, 1 container"/>
+            <label data-i18n="rfq.qty">Quantity / Volume</label>
+            <input type="text" name="quantity" placeholder="e.g. 500 m², 20 pcs, 1 container" data-i18n-ph="ct.x.50"/>
           </div>
           <div class="form-group">
-            <label>Required Delivery Date</label>
-            <input type="text" name="delivery_date" placeholder="e.g. Q2 2026"/>
+            <label data-i18n="ct.x.51">Required Delivery Date</label>
+            <input type="text" name="delivery_date" placeholder="e.g. Q2 2026" data-i18n-ph="ct.x.52"/>
           </div>
         </div>
         <div class="form-group">
-          <label>Technical Specifications &amp; Project Description *</label>
-          <textarea name="specs" rows="6" required placeholder="Please describe your technical requirements, project context, any specific dimensions, standards or certifications needed..."></textarea>
+          <label data-i18n="ct.x.53">Technical Specifications &amp; Project Description *</label>
+          <textarea name="specs" rows="6" required placeholder="Please describe your technical requirements, project context, any specific dimensions, standards or certifications needed..." data-i18n-ph="ct.x.54"></textarea>
         </div>
-        <div class="form-note">
+        <div class="form-note" data-i18n="ct.x.55">
           📎 <strong>Technical drawings or documents?</strong> Please send them to <a href="mailto:b2b@statusprolegalis.com">b2b@statusprolegalis.com</a> referencing your company name.
         </div>
         <div class="form-gdpr">
           <input type="checkbox" id="rfq-gdpr" required/>
-          <label for="rfq-gdpr">I agree to the processing of my personal data for the purpose of this quotation request (GDPR/RODO).</label>
+          <label for="rfq-gdpr" data-i18n="ct.x.56">I agree to the processing of my personal data for the purpose of this quotation request (GDPR/RODO).</label>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;" data-i18n="rfq.btn">Submit RFQ</button>
         <div id="rfq-status" class="form-status"></div>

@@ -90,7 +90,7 @@ function injectComponents() {
         <h4 data-i18n="footer.contact_title"></h4>
         <div class="footer-contact-item">
           <span class="footer-contact-icon">📍</span>
-          <span>Warsaw, Poland</span>
+          <span data-i18n="footer.city">Warsaw, Poland</span>
         </div>
         <div class="footer-contact-item">
           <span class="footer-contact-icon">📧</span>
