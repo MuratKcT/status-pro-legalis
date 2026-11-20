@@ -47,6 +47,13 @@ function injectComponents() {
       <li><a href="${depth}about.html" data-i18n="nav.about"></a></li>
       <li><a href="${depth}contact.html" data-i18n="nav.contact"></a></li>
       <li class="nav-rfq"><a href="${depth}contact.html#rfq" data-i18n="nav.rfq"></a></li>
+      <li class="nav-langs">
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="pl" onclick="setLang('pl')">PL</button>
+        <button class="lang-btn" data-lang="ua" onclick="setLang('ua')">UA</button>
+        <button class="lang-btn" data-lang="tr" onclick="setLang('tr')">TR</button>
+        <button class="lang-btn" data-lang="ru" onclick="setLang('ru')">RU</button>
+      </li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
